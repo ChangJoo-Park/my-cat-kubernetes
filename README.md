@@ -6,3 +6,9 @@
 # :)
 /> sh deploy.sh
 ```
+
+
+## Test
+
+- `<APP_URL>/` : fetch all Cats
+- `<APP_URL>/cat` : Create a Cat (METHOD: GET) 
