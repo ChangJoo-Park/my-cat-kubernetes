@@ -12,6 +12,7 @@ spec:
   selector:
     run: mongo
 ---
+# https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-apiversion-definition-guide.html
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
