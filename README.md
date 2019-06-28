@@ -1,6 +1,6 @@
 # My Cat. Express + MongoDB on Kubernetes
 
-![](images/dofile.jpg)
+![](https://github.com/ChangJoo-Park/my-cat-kubernetes/blob/master/images/dofle.jpg?raw=true)
 
 ```bash
 # :)
