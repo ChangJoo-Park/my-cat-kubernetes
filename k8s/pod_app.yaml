@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-cat
+  labels:
+    run: my-cat
+spec:
+  ports:
+  - port: 80
+    targetPort: 3000
+    protocol: TCP
+  type: NodePort
+  selector:
+    run: my-cat
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-cat
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        run: my-cat
+    spec:
+      containers:
+      - name: my-cat
+        image: my-cat:0.0.2
+        ports:
+        - containerPort: 3000
