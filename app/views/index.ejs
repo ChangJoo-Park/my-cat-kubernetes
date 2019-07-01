@@ -1,0 +1,15 @@
+<html>
+  <head></head>
+  <body>
+    <h1>My Random Cats</h1>
+    <h2><%= expressFlash %></h2>
+    <div>
+      <img src="<%= cat %>" alt="" srcset="">
+    </div>
+    <a href="/">Refresh</a>
+    <form action="/favorites" method="POST">
+      <input type="hidden" value="<%= cat %>" name="cat">
+      <input type="submit">
+    </form>
+  </body>
+</html>
